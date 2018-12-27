@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Royal Ur | WebGL</title>
+    <link rel="shortcut icon" href="TemplateData/royal-ur.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/RoyalUr.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="title-top" style="position: absolute; -webkit-transform: translate(0%, -140%);">
+        <h1 style="font-family: Helvetica, Verdana, Arial, sans-serif; font-size: 40pt;">
+          <img style="vertical-align:middle; height: 120px;" alt="Royal Ur" style="height: 150px" src='TemplateData/icon.png'/>
+        Royal Ur</h1>
+      </div>      
+      <div id="gameContainer" style="width: 800px; height: 400px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">Royal Ur</div>
+      </div>
+        <a style="margin: 0 auto; display:block; text-align: center" href='https://play.google.com/store/apps/details?id=com.DanielSalvadori.RoyalUr&utm_source=WebGL&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+          <img style="display: block; margin-left: auto; margin-right: auto; height: 120px" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
+        </a>
+    </div>
+    
+  </body>
+</html>
