@@ -698,6 +698,10 @@ public class Game : MonoBehaviour {
         GetPos("Player2Start7").piece = GetPlayer2Piece(7);
         GetPlayer2Piece(7).position = GetPos("Player2Start7");
         GetPlayer2Piece(7).transform.position = GetPos("Player2Start7").transform.position;
+
+        // Reset end spots
+        LinkPlayer1("Player1Last1", "Player1End1");
+        LinkPlayer2("Player2Last1", "Player2End1");
     }
 
     public void UpdateEndSpot(Position oldEndSpot) {
