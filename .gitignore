@@ -4,5 +4,7 @@
 /Packages/
 /Temp/
 /.vs/
+/.gradle/
 /*.sln
 /*.csproj
+/*.apk
